@@ -1,0 +1,145 @@
+* {
+  font-family: "Oswald", sans-serif; /*Tipo de fonte que está sendo utilizada*/
+  font-weight: 400; /* Tamanho da fonte que está sendo utilizada*/
+  color: #5d5d7d; /*Cor da fonte que está sendo utilizada*/
+  margin: 0px; /*Realiza o reset da margem de todo projeto inicial*/
+  padding: 0px; /*Realiza o resete do estpaco interno em todo projeto inicial*/
+  box-sizing: border-box; /* garante que o elemento tenha o tamanho que definimos*/
+}
+
+.container {
+  height: 100vh; /*viewport heigth  - altura da janela de visualização */
+  width: 100vw; /*viewport width   - largura da janela de visualização */
+}
+.container-left {
+  display: inline-block; /* Elemento e tratado como um bloco*/
+  width: 60%; /* Está definindo  a largura*/
+  margin-top: 20%; /*Está dando margem de 20% para cima*/
+  padding-left: 136px; /*Espaço em branco na margem esquerda do elemento*/
+}
+
+.container-right {
+  display: inline-block; /* Elemento e tratado como um bloco*/
+  background-color: rgba(93, 93, 125, 0.16); /*Cor de fundo aplicado*/
+  height: 100vh; /*Definindo a porcentagm da altura*/
+  width: 40%; /* Está definindo  a  largura*/
+  position: absolute; /*Tipo de posição do elemento*/
+}
+
+.logo-image {
+  position: relative; /*Tipo de posição do elemento*/
+  top: 150px; /*Está definindo altura da imagem em relação ao topo*/
+  right: 200px; /*Está definindo largura da imagem*/
+}
+
+h1 {
+  font-size: 70px; /*Tamanho da fonte*/
+  line-height: 80px; /* 114.286% */ /*Altura da linha*/
+  width: 368px; /*Está definindo a largura*/
+}
+p {
+  font-size: 28px;
+  font-style: normal;
+  opacity: 60%;
+  margin: 15px 0;
+  width: 540px;
+  text-align: justify;
+}
+
+.button-section {
+  width: 269px;
+  height: 62px;
+  flex-shrink: 0;
+  background-color: #9499ea;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  line-height: normal;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+.button-section:hover {
+  opacity: 0.8;
+}
+.button-section:active {
+  opacity: 0.5;
+}
+
+.link-header {
+  font-size: 28px;
+  font-style: normal;
+  line-height: normal;
+  margin-right: 41px;
+  cursor: pointer;
+}
+
+.link-header:nth-child(2) {
+  opacity: 0.4;
+}
+
+.link-header:hover {
+  opacity: 0.4;
+}
+
+.link-header:active {
+  opacity: 0.8;
+}
+header {
+  margin: 24px 0px 0px 57px;
+}
+
+@media screen and (max-width: 900px) {
+  /* A partir de 900px é aplicado as configurações abaixo. */
+  .container-left {
+    display: block;
+    width: 100%;
+    height: 50%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container-right {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: static;
+    padding: 40px;
+  }
+  header {
+    display: none;
+  }
+
+  .logo-image {
+    position: static;
+    max-width: 90%; /*Maximo da imagem é 90%*/
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    line-height: 52px; /* 144.444% */
+    width: auto;
+    margin: 58px 53px 0px 54px;
+  }
+  p {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+    width: auto;
+    margin: 15px 40px;
+  }
+  .button-section {
+    display: block;
+    margin: 0 auto; /*Aplica primeiro valor em cima e em baixo e segundo valor na direita e esquerda*/
+  }
+}
+
+@media  screen and (max-width: 330px) {
+  .container-left {
+      height: 70%;
+  }
+  
+}
