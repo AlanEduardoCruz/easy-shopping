@@ -1,4 +1,4 @@
-## Easy-shopping</h1>
+## Easy-shopping
 ## Esse foi um projeto que eu aprendi no <a href="https://rodolfomori.com.br/devclub">DevClub
 ## :black_circle: Tecnologias utilizadas:
 
